@@ -92,7 +92,7 @@ And for English:
 
 ![Order through WhatsApp in English](https://twilio-cms-prod.s3.amazonaws.com/images/test-whatsapp-english.width-1600.png)
 
-## Make changes and re-dwploy
+## Make changes and re-deploy
 
 In order to re-deploy the solution after the intial set-up use: 
 
