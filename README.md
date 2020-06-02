@@ -40,7 +40,7 @@ Use the following procedure to create a new agent in Google Dialogflow:
 * Now click on  the little gear next to the agent name on the sidebar 
 * Click on "Export Import"
 * Click on the "Import from ZIP" button 
-* In the popup that opens, upload the zip file that you find in this repo in `dialogflow-intents/Barista.zip`. This will initialize a new intent to recognize a new order 
+* In the popup that opens, upload the zip file that you find in this repo in [`dialogflow-intents/Barista.zip`](https://github.com/vernig/twilio-multilingual-chatbot/blob/master/dialogflow-intents/Barista.zip). This will initialize a new intent to recognize a new order 
 
 Once the Agent is created, you need to get your credential to use this agent from Twilio: 
 
