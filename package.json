@@ -1,7 +1,6 @@
 {
-  "name": "serverless",
-  "version": "0.0.0",
-  "private": true,
+  "name": "twilio-multilingual-chatbot",
+  "version": "0.0.1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "twilio-run",
@@ -15,5 +14,6 @@
   },
   "dependencies": {
     "dialogflow": "^1.2.0"
-  }
+  }, 
+  "author": "vernig"
 }
