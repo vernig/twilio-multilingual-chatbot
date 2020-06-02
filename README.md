@@ -4,11 +4,11 @@ This project is the code companion of [this blogpost](https://www.twilio.com/blo
 
 The flow implemented in this project is the following: 
 
-
+![diagram](https://github.com/vernig/twilio-multilingual-chatbot/blob/master/diagram.png)
 
 # How to use this repo 
 
-This repo contains a collection of assets and functions for Twilio Runtime, as well as an [initalization script](#Provisioning your Twilio account) to provision your account with a preconfigured Twilio autopilot bot. Before running the script you need to create your Google Dialogflow agent and (optionally) get your Google Translate API key. 
+This repo contains a collection of assets and functions for Twilio Runtime, as well as an [initalization script](#provisioning-your-twilio-account) to provision your account with a preconfigured Twilio autopilot bot. Before running the script you need to create your Google Dialogflow agent and (optionally) get your Google Translate API key. 
 
 ## Google translate API key
 
@@ -69,14 +69,15 @@ npm run init
 
 The script will ask you the following questions: 
 * Twilio account SID (can abe found [in the home page of your Twilio project](https://twilio.com/console))
-* Twilio auth token (can abe found [[in the home page of your Twilio project](https://twilio.com/console)](https://twilio.com/console))
-* Google Translate API key: provide here the key you obtained with [this procedure](#Google translate API key)
+* Twilio auth token (can abe found [[in the home page of your Twilio project](https://twilio.com/console))
+* Google Translate API key: provide here the key you obtained with [this procedure](#google-translate-api-key)
 * If you want to create a new Autopilot agent
 
 Once the script is finished, it will provide you with a link to provision your WhatsApp sender / sandbox:
 
 ```
-Runtime environment deployed'Configure your messaging / whatsapp webhook to the following url: https://barista-xxxx-dev.twil.io/incoming-message`)
+Runtime environment deployed
+Configure your messaging / whatsapp webhook to the following url: https://barista-xxxx-dev.twil.io/incoming-message`)
 ```
 
 In your Twilio console go to the [sandbox configuration page](https://www.twilio.com/console/sms/whatsapp/sandbox) or the [sender configuration page](https://www.twilio.com/console/sms/whatsapp/senders) and paste the above link to the "When a message comes in" webhook". Remmeber to Save the configuration. 
