@@ -36,7 +36,7 @@ function initAutopilot(twilioClient, domainName) {
     twilioClient.autopilot.assistants
       .create({
         friendlyName: 'Barista',
-        uniqueName: 'Barista-6',
+        uniqueName: 'Barista',
       })
       .then((assistant) => Promise.resolve(assistant.sid))
       .then((assistantSid) => {

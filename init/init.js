@@ -38,7 +38,6 @@ Inquirer.prompt([
   },
 ]).then(async function (answers) {
   let env = {};
-  let functionsEnv = {};
 
   answers.accountSid = 'AC48eb8ff8f7bbca9e21fb13ef570823fe';
   answers.authToken = '3ef9bf487fe0c830e3b22ac819a42bab';
@@ -70,8 +69,10 @@ Inquirer.prompt([
     SERVICE_NAME,
     env
   );
-  console.log('Runtime environment deployed')
-  console.log(`\nConfigure your messaging / whatsapp webhook to the following url: https://${domain}/incoming-message`)
+  console.log('Runtime environment deployed');
+  console.log(
+    `\nConfigure your messaging / whatsapp webhook to the following url: https://${domain}/incoming-message`
+  );
 
   // Write env file
   env.ACCOUNT_SID = answers.accountSid;
