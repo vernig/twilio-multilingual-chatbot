@@ -64,7 +64,7 @@ Now you should have everything you need to connect your Twilio account to the Go
 
 ```
 npm install 
-npm run init
+npm run twilio-init
 ```
 
 The script will ask you the following questions: 
