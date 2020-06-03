@@ -39,9 +39,6 @@ Inquirer.prompt([
 ]).then(async function (answers) {
   let env = {};
 
-  answers.accountSid = 'AC48eb8ff8f7bbca9e21fb13ef570823fe';
-  answers.authToken = '3ef9bf487fe0c830e3b22ac819a42bab';
-
   env.TRANSLATE_API_KEY = answers.translateApiKey;
   env.AUTOPILOT_WA_WEBHOOK;
 
