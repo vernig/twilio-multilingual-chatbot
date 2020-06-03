@@ -22,12 +22,12 @@ function initServerless(accountSid, authToken, serviceName, suffixName) {
   });
 
   return api
-    .createService(serviceName, client.getClient())
+    .createService(serviceName, client)
     .then((serviceSid) =>
       api.createEnvironmentFromSuffix(
         suffixName,
         serviceSid,
-        client.getClient()
+        client
       )
     )
     .then((environment) => Promise.resolve(environment));
